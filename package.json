@@ -1,0 +1,38 @@
+{
+  "name": "prj5",
+  "version": "1.0.0",
+  "description": "prj5 for cs444",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development --disable-host-check",
+    "build:dev": "NODE_ENV=development webpack --mode development;",
+    "build:prod": "mkdir -p prod; NODE_ENV=production webpack --mode production -o prod;",
+    "clean": "rm -rf dist prod"
+  },
+  "author": "Yuqing Lin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-react": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "chai": "^4.2.0",
+    "copy-webpack-plugin": "^6.3.2",
+    "ignore-loader": "^0.1.2",
+    "mocha": "^8.2.0",
+    "nodemon": "^2.0.6",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "cs544-ss": "file:src/cs544-ss",
+    "express": "^4.17.1",
+    "mustache": "^4.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
