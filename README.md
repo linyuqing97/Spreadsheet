@@ -1,4 +1,4 @@
-# Spreedsheet
+# Spreadsheet
 
 # About
 This is a fullstack web application intend to develop a cured "google spreadsheet" using React, Express, Nodejs, Mongodb.
